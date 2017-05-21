@@ -44,4 +44,4 @@ Target "UnitTests" (fun _ -> testAssemblies |> NUnit3 id)
   ==> "Deploy"
 
 // start build
-RunTargetOrDefault "Build"
+RunTargetOrDefault "UnitTests"
