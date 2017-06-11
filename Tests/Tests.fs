@@ -17,4 +17,10 @@ let ``acronim`` () =
     Foo.ToAcronim "PHP: Hypertext Preprocessor"  |> should equal "PHP"
     Foo.ToAcronim "hyper text markup language" |> should equal "HTML" 
 
+[<Test>]
+let ``alternate case`` () =
+    Foo.AlternateCase "a" |> should equal "A"
+    Foo.AlternateCase "A" |> should equal "a"
+    Foo.AlternateCase "aBC" |> should equal "Abc"
+
             
